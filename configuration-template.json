@@ -1,0 +1,22 @@
+{
+  "public": {
+  },
+  "private": {
+    "GRAPQL_PORT": 4000,
+    "PORT": 3000,
+    "MONGODB": {
+      "URL": "id.mlab.com:port/database",
+      "USER": "username:password"
+    },
+    "API_AI": {
+  "URL": "https://api.api.ai/v1/",
+  "ACCESS_TOKEN": "xxxxxxxxxxx"
+},
+    "AWS": {
+      "S3_BUCKET": "bucket_name",
+      "ACCESS_KEY_ID": "xxxxxxxxxxxxxxxx",
+      "SECRET_ACCESS_KEY": "xxxxxxxxxxxxxxxx+ExmIvTBRi0nBGKoyVsISzPzYO",
+      "REGION": "region"
+    }
+  }
+}

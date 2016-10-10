@@ -1,0 +1,55 @@
+{
+  "name": "chatbot-backend",
+  "private": true,
+  "scripts": {
+    "dev": "meteor --settings ./development.json",
+    "start": "meteor --production --settings ./production.json",
+    "deploy": "git push heroku master"
+  },
+  "dependencies": {
+    "apollo-client": "^0.4.15",
+    "apollo-server": "^0.2.8",
+    "aws-sdk": "^2.6.5",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "flexboxgrid": "^6.3.1",
+    "form-data": "^2.1.0",
+    "graphql": "^0.7.0",
+    "graphql-tag": "^0.1.14",
+    "graphql-tools": "^0.7.2",
+    "http-proxy-middleware": "^0.17.1",
+    "material-ui": "^0.15.4",
+    "meteor-node-stubs": "~0.2.0",
+    "mongoose": "^4.6.0",
+    "multer": "^1.2.0",
+    "multer-s3": "^2.3.2",
+    "notie": "^3.9.4",
+    "react": "^15.3.1",
+    "react-apollo": "^0.5.5",
+    "react-dom": "^15.3.1",
+    "react-helmet": "^3.1.0",
+    "react-router": "^2.8.1",
+    "react-tap-event-plugin": "^1.0.0",
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Valora/ChatbotBackend.git"
+  },
+  "keywords": [
+    "meteor",
+    "apollo",
+    "graphql"
+  ],
+  "author": "Janik von Rotz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Valora/ChatbotBackend/issues"
+  },
+  "homepage": "https://gitlab.com/Valora/ChatbotBackend#README"
+}
