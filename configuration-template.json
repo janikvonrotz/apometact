@@ -15,7 +15,7 @@
     "AWS": {
       "S3_BUCKET": "bucket_name",
       "ACCESS_KEY_ID": "xxxxxxxxxxxxxxxx",
-      "SECRET_ACCESS_KEY": "xxxxxxxxxxxxxxxx+ExmIvTBRi0nBGKoyVsISzPzYO",
+      "SECRET_ACCESS_KEY": "xxxxxxxxxxxxxxxx",
       "REGION": "region"
     }
   }
