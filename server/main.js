@@ -5,10 +5,10 @@ import { makeExecutableSchema } from 'graphql-tools';
 import schema from './schema';
 import resolvers from './resolvers';
 import proxyMiddleware from 'http-proxy-middleware';
-import startup from './startup';
+import seed from './seed';
 import { inMemory, toS3 } from './upload';
 
-startup();
+seed();
 
 const GRAPHQL_PORT = 4000;
 const executableSchema = makeExecutableSchema({
