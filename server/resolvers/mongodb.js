@@ -65,7 +65,9 @@ const resolvers = {
   RootMutation: {
     createDeal(root, args){
       var item = new Deals(args);
-      item.createdAt = new Date()
+      item.createdAt = new Date();
+      item.publishAt.setHours(0,0,0,0);
+      item.expiresAt.setHours(0,0,0,0);
       return item.save().then((response) => {
         return {id: response._id}
       });
@@ -79,7 +81,9 @@ const resolvers = {
     },
     updateDeal(root, args){
       return Deals.findOne({_id: args.id}).then((item) => {
-        item = Object.assign(item, args)
+        item = Object.assign(item, args);
+        item.publishAt.setHours(0,0,0,0);
+        item.expiresAt.setHours(0,0,0,0);
         return item.save().then((response) => {
           return "success"
         })

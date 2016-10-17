@@ -20,8 +20,9 @@ var seed = () => {
     }
   })
 
-  var expiresAt = new Date('2016-10-31')
-  var publishAt =  new Date('2016-10-01')
+  // year, month, day [, hour, minute, second, millisecond ]
+  var expiresAt = new Date("October 31, 2016 00:00:00");
+  var publishAt = new Date("October 1, 2016 00:00:00");
 
   Deals.find({}, (error, response) => {
     if (response.length === 0 ) {
@@ -33,9 +34,9 @@ var seed = () => {
           categoryId: "Beverages",
           productDetails: "",
           itemUrl: "http://www.okpunktstrich.ch/de/",
-          imageUrl: "https://s3.amazonaws.com/chatbotbackend/Energy+Cola.png",
+          imageUrl: "https://s3.amazonaws.com/chatbotbackend/1Energy+Cola.png",
           qrImageUrl: "https://s3.amazonaws.com/chatbotbackend/2050001767868.gif",
-          pointOfSale: ["KKiosk", "Press & Books"],
+          pointOfSale: ["k kiosk", "Press & Books"],
           publishAt: publishAt,
           expiresAt: expiresAt,
           createdAt: today
@@ -46,9 +47,9 @@ var seed = () => {
           categoryId: "Welcome Deal",
           productDetails: "",
           itemUrl: "http://www.okpunktstrich.ch/de/",
-          imageUrl: "https://s3.amazonaws.com/chatbotbackend/Ginger+Breeze.png",
+          imageUrl: "https://s3.amazonaws.com/chatbotbackend/1Ginger+Breeze.png",
           qrImageUrl: "https://s3.amazonaws.com/chatbotbackend/2050001767868.gif",
-          pointOfSale: ["KKiosk", "Press & Books"],
+          pointOfSale: ["k kiosk", "Press & Books"],
           publishAt: publishAt,
           expiresAt: expiresAt,
           createdAt: today
@@ -59,9 +60,9 @@ var seed = () => {
           categoryId: "Beverages",
           productDetails: "",
           itemUrl: "http://www.okpunktstrich.ch/de/",
-          imageUrl: "https://s3.amazonaws.com/chatbotbackend/Bier.png",
+          imageUrl: "https://s3.amazonaws.com/chatbotbackend/1Bier.png",
           qrImageUrl: "https://s3.amazonaws.com/chatbotbackend/2050001767851.gif",
-          pointOfSale: ["KKiosk", "Press & Books"],
+          pointOfSale: ["k kiosk", "Press & Books"],
           publishAt: publishAt,
           expiresAt: expiresAt,
           createdAt: today
@@ -72,9 +73,9 @@ var seed = () => {
           categoryId: "Beverages",
           productDetails: "",
           itemUrl: "http://www.okpunktstrich.ch/de/",
-          imageUrl: "https://s3.amazonaws.com/chatbotbackend/Wasser+Blau.png",
+          imageUrl: "https://s3.amazonaws.com/chatbotbackend/1Wasser+Blau.png",
           qrImageUrl: "https://s3.amazonaws.com/chatbotbackend/2050001767875.gif",
-          pointOfSale: ["KKiosk", "Press & Books"],
+          pointOfSale: ["k kiosk", "Press & Books"],
           publishAt: publishAt,
           expiresAt: expiresAt,
           createdAt: today
@@ -85,9 +86,9 @@ var seed = () => {
           categoryId: "Food",
           productDetails: "",
           itemUrl: "http://www.okpunktstrich.ch/de/",
-          imageUrl: "https://s3.amazonaws.com/chatbotbackend/Happy+Snack.png",
+          imageUrl: "https://s3.amazonaws.com/chatbotbackend/1Happy+Snack.png",
           qrImageUrl: "https://s3.amazonaws.com/chatbotbackend/2050001767882.gif",
-          pointOfSale: ["KKiosk", "Press & Books"],
+          pointOfSale: ["k kiosk", "Press & Books"],
           publishAt: publishAt,
           expiresAt: expiresAt,
           createdAt: today
@@ -98,9 +99,9 @@ var seed = () => {
           categoryId: "Food",
           productDetails: "",
           itemUrl: "http://www.okpunktstrich.ch/de/",
-          imageUrl: "https://s3.amazonaws.com/chatbotbackend/Happy+Kaugummi.png",
+          imageUrl: "https://s3.amazonaws.com/chatbotbackend/1Happy+Kaugummi.png",
           qrImageUrl: "https://s3.amazonaws.com/chatbotbackend/2050001767899.gif",
-          pointOfSale: ["KKiosk", "Press & Books"],
+          pointOfSale: ["k kiosk", "Press & Books"],
           publishAt: publishAt,
           expiresAt: expiresAt,
           createdAt: today
@@ -111,9 +112,9 @@ var seed = () => {
           categoryId: "Food",
           productDetails: "",
           itemUrl: "http://www.okpunktstrich.ch/de/",
-          imageUrl: "https://s3.amazonaws.com/chatbotbackend/Travellers+Favorite.png",
+          imageUrl: "https://s3.amazonaws.com/chatbotbackend/1Travellers+Favorite.png",
           qrImageUrl: "https://s3.amazonaws.com/chatbotbackend/2050001767905.gif",
-          pointOfSale: ["KKiosk", "Press & Books"],
+          pointOfSale: ["k kiosk", "Press & Books"],
           publishAt: publishAt,
           expiresAt: expiresAt,
           createdAt: today
@@ -124,22 +125,22 @@ var seed = () => {
           categoryId: "Nonfood",
           productDetails: "",
           itemUrl: "http://www.okpunktstrich.ch/de/",
-          imageUrl: "https://s3.amazonaws.com/chatbotbackend/Schirm+&+Gloves.png",
+          imageUrl: "https://s3.amazonaws.com/chatbotbackend/1Schirm+&+Gloves.png",
           qrImageUrl: "https://s3.amazonaws.com/chatbotbackend/2050001768018.gif",
-          pointOfSale: ["KKiosk", "Press & Books"],
+          pointOfSale: ["k kiosk", "Press & Books"],
           publishAt: publishAt,
           expiresAt: expiresAt,
           createdAt: today
         },
         {
-          title: "Schirm",
+          title: "ok.- umbrella",
           description: "CHF 6.- statt 8.- pro Stück",
           categoryId: "Nonfood",
           productDetails: "",
           itemUrl: "http://www.okpunktstrich.ch/de/",
-          imageUrl: "https://s3.amazonaws.com/chatbotbackend/Schirm.png",
+          imageUrl: "https://s3.amazonaws.com/chatbotbackend/1Schirm.png",
           qrImageUrl: "https://s3.amazonaws.com/chatbotbackend/2050001768025.gif",
-          pointOfSale: ["KKiosk", "Press & Books"],
+          pointOfSale: ["k kiosk", "Press & Books"],
           publishAt: publishAt,
           expiresAt: expiresAt,
           createdAt: today

@@ -32,6 +32,8 @@ app.use('/graphiql', graphiqlExpress({
 app.use('/graphql', bodyParser.json(), apolloExpress({ schema: executableSchema }));
 app.listen(GRAPHQL_PORT);
 
+console.log('The time is: ', new Date());
+
 WebApp.rawConnectHandlers.use(proxyMiddleware(`http://localhost:${GRAPHQL_PORT}/graphql`));
 WebApp.rawConnectHandlers.use(proxyMiddleware(`http://localhost:${GRAPHQL_PORT}/graphiql`));
 WebApp.rawConnectHandlers.use(proxyMiddleware(`http://localhost:${GRAPHQL_PORT}/upload`));
