@@ -145,7 +145,7 @@ export default class DealEdit extends Component {
 
           <br />
           <small>Point Of Sale</small>
-          {['Avec', 'Bretzel König', 'Ditsch', 'KKiosk', 'Press & Books'].map((salePoint) => {
+          {['Avec', 'Bretzel König', 'Ditsch', 'k kiosk', 'Press & Books'].map((salePoint) => {
             return (<Checkbox
               key={salePoint}
               name={salePoint}
