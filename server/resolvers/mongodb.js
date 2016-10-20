@@ -12,6 +12,7 @@ const resolvers = {
     },
     deal(root, args){
       return Deals.findOne({_id: args.id}).then((item) => {
+        // console.log("get expiresAt", item.expiresAt)
         item.id = item._id;
         return item;
       });
@@ -55,7 +56,7 @@ const resolvers = {
       return new Date(value); // value from the client
     },
     __serialize(value) {
-      return value.toISOString(); // value sent to the client
+      return value.toUTCString(); // value sent to the client
     },
     __parseLiteral(ast) {
       return ast.value;
@@ -66,8 +67,8 @@ const resolvers = {
     createDeal(root, args){
       var item = new Deals(args);
       item.createdAt = new Date();
-      item.publishAt.setHours(0,0,0,0);
-      item.expiresAt.setHours(0,0,0,0);
+      // item.publishAt.setHours(0,0,0,0);
+      // item.expiresAt.setHours(0,0,0,0);
       return item.save().then((response) => {
         return {id: response._id}
       });
@@ -82,8 +83,9 @@ const resolvers = {
     updateDeal(root, args){
       return Deals.findOne({_id: args.id}).then((item) => {
         item = Object.assign(item, args);
-        item.publishAt.setHours(0,0,0,0);
-        item.expiresAt.setHours(0,0,0,0);
+        // item.publishAt.setHours(0,0,0,0);
+        // item.expiresAt.setHours(0,0,0,0);
+        // console.log("update expiresAt", item.expiresAt)
         return item.save().then((response) => {
           return "success"
         })
