@@ -107,7 +107,7 @@ export default class DealEdit extends Component {
       // console.log("get expiresAt String", item.expiresAt)
       item.publishAt = new Date(item.publishAt);
       item.expiresAt = new Date(item.expiresAt);
-      console.log("get expiresAt", item.expiresAt)
+      // console.log("get expiresAt", item.expiresAt)
     }
 
     return (loading || !item) ? (<p>loading...</p>) : (
@@ -253,7 +253,7 @@ const DealEditWithMutation = graphql(updateMutation, {
   props({ mutate }) {
     return {
       updateDeal(item) {
-        console.log("update expiresAt", item.expiresAt)
+        // console.log("update expiresAt", item.expiresAt)
         item.publishAt = item.publishAt.toUTCString();
         item.expiresAt = item.expiresAt.toUTCString();
         // console.log("update expiresAt String", item.expiresAt)
