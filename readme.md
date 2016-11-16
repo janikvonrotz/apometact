@@ -1,11 +1,11 @@
 
 # Apometact
 
-This is an Apollo, Meteor and React example app. It uses MongoDB as its main storage and connects to a REST endpoint (which is not implemented on the client yet).
-
+This is a Apollo, Meteor and React example app.  
+It is the backend application for this chatbot: https://github.com/janikvonrotz/ok-chatbot  
 Blog post: https://janikvonrotz.ch/2016/10/09/graphql-with-apollo-meteor-and-react/
 
-The client:
+The application:
 
 ![](screenshot.png)
 
@@ -20,8 +20,8 @@ The magic:
 Run with:
 
 - Install Meteor
-- Clone this repo and install dependencies `npm install`
-- Duplicate `configuration-template.json` as `development.json` and update it.
+- Clone this repo and install dependencies with `npm install`
+- Copy `configuration-template.json` to `development.json` and update it
 - Run with `npm run dev`
 
 What you get:
