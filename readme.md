@@ -2,8 +2,8 @@
 # Apometact
 
 This is a Apollo, Meteor and React example app.  
-It is the backend application for this chatbot: https://github.com/janikvonrotz/ok-chatbot  
-Blog post: https://janikvonrotz.ch/2016/10/09/graphql-with-apollo-meteor-and-react/
+It is the backend application for this chatbot: [ok Chatbot](https://github.com/janikvonrotz/ok-chatbot)  
+Blog post: [Graphql with Apollo, Meteor and React](https://janikvonrotz.ch/2016/10/09/graphql-with-apollo-meteor-and-react/)
 
 The application:
 
