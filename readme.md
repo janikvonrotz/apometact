@@ -11,7 +11,7 @@ The application:
 
 The magic:
 
-![](react meteor graphl apollo.jpg)
+![](react_meteor_graphql_apollo.jpg)
 
 - Build system > Meteor
 - Graphql client > React and Apollo
